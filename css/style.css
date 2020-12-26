@@ -1,0 +1,370 @@
+*,
+::before, 
+::after
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root {
+    --lightred:rgb(233, 198, 199, 0.3);
+    --red: #c44448;
+    --grey: #f3f3f5;
+}
+
+html {
+    font-family: 'Darker Grotesque', sans-serif;
+}
+
+body:not(footer) {
+    width: 83%;
+    margin: 0 auto;
+}
+
+h1, h2, h3 {
+    font-family: 'Spartan', sans-serif;
+    margin: 1rem 0;
+}
+
+h1::before {
+    content: 'Hi There,\A';
+    white-space: pre;
+    font-size: 1rem;
+    font-family: 'Darker Grotesque', sans-serif;
+}
+
+h1 {
+    font-size: 2.8rem;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+h2:before {
+    content: '';
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: var(--lightred);
+    position: relative;
+    top: 7px;
+    left: 28px;
+    z-index: -1;
+}
+p {
+    font-size: 1.3rem;
+    margin: 1rem 0;
+}
+
+a {
+    text-decoration: none;
+
+}
+address {
+    font-style: normal;
+}
+.cta-button {
+    display: inline-block;
+    margin: 25px 0;
+    width: 195px;
+    height: 45px;
+    background-color: var(--red);
+    color: white;
+    text-align: center;
+    line-height: 2.5rem;
+    font-size: 1.1rem;
+    font-weight: bold;
+    border-radius: 10px;
+}
+
+header {
+    background: url(../images/gummy-app-development.png), var(--grey);
+    background-position: 100% 40%;
+    background-size: 65%;
+    background-repeat: no-repeat;
+    padding: 15px;
+}
+
+.topbar {
+    display: flex;
+    justify-content: space-between;
+    height: 50px;
+}
+
+.initial {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    position: absolute;
+    top: 10px;
+    left: 55px;
+    background-color: var(--red);
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.social-networks {
+    margin-bottom: 100px;
+}
+.social-networks i {
+    margin-right: 17px;
+}
+
+.menu {
+    transform-origin: left top;
+    transform: rotate(-90deg) translate(-110%, -970px);
+    direction:rtl;
+    font-weight: bold;
+    border:0px solid black;
+    width: 480px;
+}
+
+.menu ul {
+    list-style-type: none;
+}
+
+.menu li {
+    display: inline-block;
+    margin-right: 30px;
+}
+
+.menu a {
+    color: black;
+    font-size: 1.5rem;
+}
+
+
+.menu a:hover {
+    color: var(--red);
+    font-weight: bold;
+}
+
+/*.menu a span:after {
+    text-align: center;
+    position: absolute;
+    top: 0px;
+    margin: -22px 25px;
+    content: '.';
+    white-space: pre;
+    font-size: 4rem;
+    display: block;
+}*/
+
+
+.intro {
+    width: 48%;
+}
+
+.intro .contacts {
+    margin-top: 130px;
+    font-size: 1.3rem;
+}
+
+.about-me .presentation {
+    display: flex;
+    justify-content: space-between;
+}
+
+.about-me .presentation img {
+    border-radius: 10px;
+    width: 48%;
+    object-fit: cover;
+}
+
+.about-me .presentation .me {
+    width: 50%;
+}
+
+.personal-informations {
+    display: flex;
+    justify-content: space-between;
+}
+
+.personal-informations ul {
+    list-style-type: none;
+    font-size: 1.2rem;
+}
+
+.personal-informations span {
+    font-weight: bold;
+}
+
+.feedbacks {
+    margin-top: 3rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.feedback {
+    width: 140px;
+    height: 125px;
+    background-color: var(--grey);
+    text-align: center;
+    font-size: 1.3rem;
+    padding: 1rem;
+}
+
+.service {
+    width: 315px;
+    height: 260px;
+    background-color: #efeeef;
+    text-align: center;
+    padding: 15px;
+    margin: 0 3rem 3rem 0;
+    border-radius: 10px;
+}
+
+.service .number {
+    padding-top: 1.6rem;
+    font-family: 'Spartan', sans-serif;
+    font-size: 1.8rem;
+    font-weight: bolder;
+    color: var(--red);
+    border: 1px solid var(--red);
+    width: 80px;
+    height: 80px;
+    margin: 0px auto;
+    border-radius: 50%;
+}
+.my-works .works, .services {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.my-works .works figure {
+    box-shadow: 10px 15px 10px 2px var(--grey);
+}
+
+.my-works .works figure:not(:nth-child(3n)) {
+    margin: 0 3rem 3rem 0;
+}
+
+.my-works .works figcaption {
+    height: 50px;
+    padding: 10px;
+    background-color: white;
+    font-size: 1.2rem;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+}
+
+.fa-external-link-alt {
+    color: var(--red);
+}
+
+.contacts {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.contacts form {
+    flex: 0 0 45%;
+    background-color: var(--grey);
+    padding: 30px 0 20px 50px;
+    border-radius: 10px;
+}
+
+.contacts .form-group {
+    margin: 1rem 0;
+}
+
+.contacts form input {
+    width: 90%;
+    height: 40px;
+    border-radius: 5px;
+    border: none;
+    padding: 10px;
+    outline: none;
+}
+
+.contacts form textarea {
+    width: 90%;
+    height: 153px;
+    border-radius: 5px;
+    border: none;
+    padding: 10px;
+    text-align: left;
+    outline: none;
+}
+
+.contacts .contact {
+    flex: 0 0 600px;
+}
+
+.contacts .contact p,  .contacts .contact address{
+    font-size: 1.6rem;
+    margin-bottom: 1rem;
+}
+
+.contacts span:first-child {
+    font-weight: bold;
+
+}
+
+.contacts .contact i {
+    color: var(--red);
+    margin-right: 15px
+}
+
+
+footer {
+    text-align: center;
+    background-color: var(--grey);
+    margin-top: 20px;
+    padding: 20px;
+    width: 100%;
+}
+
+@media screen and (max-width: 1537px) {
+    .menu {
+        transform: rotate(-90deg) translate(-110%, -840px);
+    }
+}
+
+@media screen and (max-width: 1440px) {
+    .menu {
+        transform: rotate(-90deg) translate(-110%, -770px);
+    }
+}
+
+@media screen and (max-width: 1366px) {
+    .menu {
+        transform: rotate(-90deg) translate(-110%, -685px);
+    }
+}
+
+@media screen and (max-width: 1024px) {
+
+    html {
+        font-size: 14px;
+    }
+    .menu {
+        transform: rotate(-90deg) translate(-110%, -415px);
+    }
+
+    .initial {
+        left: 28px;
+    }
+
+    .service{
+        flex: 1 0 200px;
+    }
+
+    .works figure {
+        flex: 0 0 300px;
+    }
+
+    .contacts form {
+        flex: 1 0 100%;
+    }
+
+    
+}
+
