@@ -6,6 +6,7 @@
     padding: 0;
     box-sizing: border-box;
 }
+
 :root {
     --lightred:rgb(233, 198, 199, 0.3);
     --red: #c44448;
@@ -14,6 +15,7 @@
 
 html {
     font-family: 'Darker Grotesque', sans-serif;
+    scroll-behavior: smooth;
 }
 
 body:not(footer) {
@@ -53,6 +55,7 @@ h2:before {
     left: 28px;
     z-index: -1;
 }
+
 p {
     font-size: 1.3rem;
     margin: 1rem 0;
@@ -62,9 +65,11 @@ a {
     text-decoration: none;
 
 }
+
 address {
     font-style: normal;
 }
+
 .cta-button {
     display: inline-block;
     margin: 25px 0;
@@ -137,7 +142,6 @@ header {
     font-size: 1.5rem;
 }
 
-
 .menu a:hover {
     color: var(--red);
     font-weight: bold;
@@ -153,7 +157,6 @@ header {
     font-size: 4rem;
     display: block;
 }*/
-
 
 .intro {
     width: 48%;
@@ -230,6 +233,7 @@ header {
     margin: 0px auto;
     border-radius: 50%;
 }
+
 .my-works .works, .services {
     display: flex;
     flex-wrap: wrap;
@@ -313,7 +317,6 @@ header {
     margin-right: 15px
 }
 
-
 footer {
     text-align: center;
     background-color: var(--grey);
@@ -341,7 +344,6 @@ footer {
 }
 
 @media screen and (max-width: 1024px) {
-
     html {
         font-size: 14px;
     }
@@ -364,7 +366,4 @@ footer {
     .contacts form {
         flex: 1 0 100%;
     }
-
-    
 }
-
