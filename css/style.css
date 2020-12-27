@@ -367,3 +367,28 @@ footer {
         flex: 1 0 100%;
     }
 }
+
+@media screen and (max-width:770px) {
+    html {
+        font-size: 13px;
+    }
+    
+    body {
+        width: 100% !important;
+    }
+
+    .cta-button {
+        line-height: 3.2rem;
+    }
+    .initial {
+        display: none;
+    }
+
+    .menu {
+        display: none;
+    }
+
+    section {
+        padding: 10px;
+    }
+}
