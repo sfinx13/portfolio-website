@@ -11,6 +11,7 @@
     --lightred:rgb(233, 198, 199, 0.3);
     --red: #c44448;
     --grey: #f3f3f5;
+    --padding-left-header: 40px;
 }
 
 html {
@@ -81,24 +82,11 @@ address {
     line-height: 2.5rem;
     font-size: 1.1rem;
     font-weight: bold;
-    border-radius: 10px;
+    border-radius: 5px;
+    letter-spacing: 2px;
 }
 
-header {
-    background: url(../images/gummy-app-development.png), var(--grey);
-    background-position: 100% 40%;
-    background-size: 65%;
-    background-repeat: no-repeat;
-    padding: 15px;
-}
-
-.topbar {
-    display: flex;
-    justify-content: space-between;
-    height: 50px;
-}
-
-.initial {
+.badge {
     width: 40px;
     height: 40px;
     border-radius: 50%;
@@ -112,37 +100,63 @@ header {
     font-size: 1.5rem;
 }
 
-.social-networks {
-    margin-bottom: 100px;
+.fa-external-link-alt {
+    color: var(--red);
 }
-.social-networks i {
+
+.header {
+    background: url(../images/gummy-app-development.png), var(--grey);
+    background-position: 100% 40%;
+    background-size: 65%;
+    background-repeat: no-repeat;
+    padding: 15px;
+    height: 650px;
+}
+.header-topbar {
+    display: flex;
+    justify-content: space-between;
+    height: 50px;
+}
+.header-topbar .social-networks {
+    padding-left: var(--padding-left-header);
+}
+.header-topbar .social-networks i {
     margin-right: 17px;
 }
-
-.menu {
+.header-topbar .menu {
+    position: fixed;
+    top: 873px;
+    left: 53px;
     transform-origin: left top;
-    transform: rotate(-90deg) translate(-110%, -970px);
+    transform: rotate(-90deg);
     direction:rtl;
     font-weight: bold;
-    border:0px solid black;
-    width: 480px;
+    width: 800px;
 }
-
-.menu ul {
+.header-topbar .menu ul {
     list-style-type: none;
 }
-
-.menu li {
+.header-topbar .menu li {
     display: inline-block;
-    margin-right: 30px;
+    width: 87px;
+    text-align: center;
 }
-
-.menu a {
+.header-topbar .menu li:last-child {
+    text-align: left;
+    margin-right: 70px;
+    height: 50px;
+    width: fit-content;
+    transform: rotate(90deg);
+}
+.header-topbar .menu a {
     color: black;
     font-size: 1.5rem;
+    width: 100%;
+    display: block;
+    margin-right: 3px;
+    
 }
-
-.menu a:hover {
+.header-topbar .menu a:hover {
     color: var(--red);
     font-weight: bold;
 }
@@ -158,59 +172,67 @@ header {
     display: block;
 }*/
 
-.intro {
-    width: 48%;
+.header-banner {
+    padding-top: 7.5rem;
 }
-
-.intro .contacts {
-    margin-top: 130px;
+.header-banner .presentation {
+    width: 48%;
+    padding-left: var(--padding-left-header);
+}
+.header-banner .presentation .contacts {
+    margin-top: 110px;
     font-size: 1.3rem;
 }
 
-.about-me .presentation {
+.about-me-presentation {
     display: flex;
     justify-content: space-between;
 }
 
-.about-me .presentation img {
+.about-me-presentation img {
     border-radius: 10px;
     width: 48%;
     object-fit: cover;
 }
 
-.about-me .presentation .me {
+.about-me-presentation .me {
     width: 50%;
 }
 
-.personal-informations {
+.about-me-presentation .personal-informations {
     display: flex;
     justify-content: space-between;
 }
 
-.personal-informations ul {
+.about-me-presentation .personal-informations ul {
     list-style-type: none;
     font-size: 1.2rem;
 }
 
-.personal-informations span {
+.about-me-presentation .personal-informations span {
     font-weight: bold;
 }
 
-.feedbacks {
+.about-me-feedbacks {
     margin-top: 3rem;
     display: flex;
     justify-content: space-between;
 }
-
-.feedback {
+.about-me-feedbacks .feedback {
     width: 140px;
     height: 125px;
     background-color: var(--grey);
     text-align: center;
     font-size: 1.3rem;
     padding: 1rem;
+    border-radius: 10px;
 }
 
+.services {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
 .service {
     width: 315px;
     height: 260px;
@@ -220,7 +242,6 @@ header {
     margin: 0 3rem 3rem 0;
     border-radius: 10px;
 }
-
 .service .number {
     padding-top: 1.6rem;
     font-family: 'Spartan', sans-serif;
@@ -234,21 +255,21 @@ header {
     border-radius: 50%;
 }
 
-.my-works .works, .services {
+.works {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
 }
 
-.my-works .works figure {
+.works figure {
     box-shadow: 10px 15px 10px 2px var(--grey);
 }
 
-.my-works .works figure:not(:nth-child(3n)) {
+.works figure:not(:nth-child(3n)) {
     margin: 0 3rem 3rem 0;
 }
 
-.my-works .works figcaption {
+.works figcaption {
     height: 50px;
     padding: 10px;
     background-color: white;
@@ -256,10 +277,6 @@ header {
     font-weight: bold;
     display: flex;
     justify-content: space-between;
-}
-
-.fa-external-link-alt {
-    color: var(--red);
 }
 
 .contacts {
@@ -325,6 +342,7 @@ footer {
     width: 100%;
 }
 
+/*
 @media screen and (max-width: 1537px) {
     .menu {
         transform: rotate(-90deg) translate(-110%, -840px);
@@ -392,3 +410,4 @@ footer {
         padding: 10px;
     }
 }
+*/
