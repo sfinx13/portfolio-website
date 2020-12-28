@@ -342,38 +342,17 @@ footer {
     width: 100%;
 }
 
-/*
-@media screen and (max-width: 1537px) {
-    .menu {
-        transform: rotate(-90deg) translate(-110%, -840px);
-    }
-}
-
-@media screen and (max-width: 1440px) {
-    .menu {
-        transform: rotate(-90deg) translate(-110%, -770px);
-    }
-}
-
-@media screen and (max-width: 1366px) {
-    .menu {
-        transform: rotate(-90deg) translate(-110%, -685px);
-    }
-}
 
 @media screen and (max-width: 1024px) {
     html {
         font-size: 14px;
     }
-    .menu {
-        transform: rotate(-90deg) translate(-110%, -415px);
-    }
 
-    .initial {
+    .badge {
         left: 28px;
     }
 
-    .service{
+    .service {
         flex: 1 0 200px;
     }
 
@@ -398,7 +377,8 @@ footer {
     .cta-button {
         line-height: 3.2rem;
     }
-    .initial {
+
+    .badge {
         display: none;
     }
 
@@ -410,4 +390,3 @@ footer {
         padding: 10px;
     }
 }
-*/
