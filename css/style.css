@@ -475,6 +475,10 @@ a {
         height: auto;
     }
 
+    .about-me-curriculum .content::before {
+        left: 0.9rem;
+    }
+
     .service {
         height: auto;
     }
