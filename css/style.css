@@ -226,13 +226,30 @@ a {
     display: flex;
     justify-content: space-between;
 }
-.about-me-presentation .personal-informations ul {
+.about-me-presentation dl {
     list-style-type: none;
     font-size: 1.2rem;
 }
-.about-me-presentation .personal-informations span {
+.about-me-presentation dt {
     font-weight: bold;
+    display: block; 
+    float: left; 
+    margin-top: 10px;
+    clear: both;
 }
+.about-me-presentation dt::after {
+    content: ' : ';
+}
+.about-me-presentation dd {
+    display: block; 
+    float: left; 
+    margin-top: 10px
+}
+.about-me-presentation dd:before {
+    content: ' ';
+    white-space: pre;
+}
+
 .about-me-feedbacks {
     margin-top: 3rem;
     display: flex;
