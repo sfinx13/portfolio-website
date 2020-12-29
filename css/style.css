@@ -267,13 +267,13 @@ a {
     border-radius: var(--block-border-radius);
     padding: 16px;
 }
-.about-me-curriculum .timeline::after {
+.about-me-curriculum .timeline::before {
     content: '';
     position: absolute;
-    top: 60px;
-    bottom: 60px;
+    top: 66px;
     left: 35px;
     width: 2px;
+    height: 85%;
     background-color: var(--red);
 }
 .about-me-curriculum .content {
