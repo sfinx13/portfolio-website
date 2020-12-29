@@ -237,7 +237,6 @@ a {
     margin-top: 3rem;
     display: flex;
     justify-content: space-between;
-    flex-wrap: wrap;
 }
 .about-me-feedbacks .feedback {
     width: 140px;
@@ -417,7 +416,24 @@ a {
     .contacts form {
         flex: 1 0 100%;
     }
+
+    .header-topbar .menu {
+        left: 31px;
+    }
+
+    .badge {
+       padding: 5px;
+    }
+
+    .about-me-feedbacks .feedback {
+        width: 105px;
+        height: 105px;
+        font-size: 1.2rem;
+
+    }
 }
+
+
 
 @media screen and (max-width: 770px) {
     html {
@@ -469,10 +485,6 @@ a {
 
     .about-me-presentation .me {
         width: 100%;
-    }
-
-    .about-me-feedbacks .feedback {
-        height: auto;
     }
 
     .about-me-curriculum .content::before {
