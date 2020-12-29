@@ -233,6 +233,7 @@ a {
     margin-top: 3rem;
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 .about-me-feedbacks .feedback {
     width: 140px;
