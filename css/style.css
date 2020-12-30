@@ -205,7 +205,6 @@ a {
     flex-wrap: nowrap;
     margin-top: 110px;
     font-size: 1.3rem;
-    border:b1px solid black;
 }
 /* header section*/
 
@@ -417,9 +416,18 @@ a {
 }
 /* contact section */
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1220px) {
     html {
         font-size: 14px;
+    }
+
+    .header-topbar .menu {
+        left: 31px;
+    }
+
+    .header-banner .presentation {
+        width: 100%;
+        padding-left: 0;
     }
 
     .badge {
@@ -434,10 +442,6 @@ a {
         flex: 1 0 100%;
     }
 
-    .header-topbar .menu {
-        left: 31px;
-    }
-
     .badge {
        padding: 5px;
     }
@@ -447,6 +451,14 @@ a {
         height: 105px;
         font-size: 1.2rem;
 
+    }
+
+    .works figure {
+        width: 40%;
+    }
+
+    .works figcaption {
+        width: 100%;
     }
 }
 
@@ -479,11 +491,6 @@ a {
     .header-banner {
         padding-top: 1.5rem;
     }
-    .header-banner .presentation {
-        width: 100%;
-        padding-left: 0;
-    }
-
     .menu {
         display: none;
     }
@@ -517,10 +524,6 @@ a {
         font-size: 0.9rem;
         width: 40px;
         height: 40px;
-    }
-
-    .works {
-        justify-content: center;
     }
 
 }
