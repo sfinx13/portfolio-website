@@ -74,7 +74,7 @@
                             <dt>Freelancer</dt><dd> Available</dd>
                         </dl>
                     </div>
-                    <a href="" class="cta-button"><i class="fas fa-cloud-download-alt"></i> Download my CV</a>
+                    <a href="" class="cta-button"><i class="fas fa-cloud-download-alt"></i> <span>Download my CV</span></a>
                 </div>
             </div>
            <div class="about-me-feedbacks">
@@ -250,6 +250,16 @@
         </section>
         <footer>
             <p><i class="far fa-copyright"></i> 2020 Adam, All Rights are reserved</p>
-        </footer> -->
+        </footer> 
+        <!--loading -->
+        <div class="loading">
+            <div class="circle"></div>
+        </div>
+        <script type="text/javascript">
+            setTimeout(() => {
+                document.querySelector('.loading').classList.add('loaded');
+            }, 1000)
+        </script>  
+
     </body>
 </html>
