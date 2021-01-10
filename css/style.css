@@ -109,7 +109,7 @@ a {
     width: 40px;
     height: 40px;
     border-radius: 50%;
-    position: absolute;
+    position: fixed;
     top: 10px;
     left: 55px;
     background-color: var(--red);
@@ -127,7 +127,7 @@ a {
 .header {
     background: url(../images/gummy-app-development.png), var(--grey);
     background-position: 100% 40%;
-    background-size: 65%;
+    background-size: 80%;
     background-repeat: no-repeat;
     padding: 15px;
     height: 650px;
@@ -172,25 +172,26 @@ a {
     color: black;
     font-size: 1.5rem;
     width: 100%;
+    height: 78px;
     display: block;
-    margin-right: 3px;
-    
+    margin-right: 3px;    
 }
 .header-topbar .menu a:hover {
     color: var(--red);
     font-weight: bold;
 }
 
-/*.menu a span:after {
-    text-align: center;
-    position: absolute;
-    top: 0px;
-    margin: -22px 25px;
-    content: '.';
-    white-space: pre;
-    font-size: 4rem;
+.menu a:hover:after {
+    position: relative;
+    top: 15px;
+    left: -40%;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background-color: var(--red);
+    content: '';
     display: block;
-}*/
+}
 
 .header-banner {
     padding-top: 7.5rem;
@@ -253,9 +254,11 @@ a {
     margin-top: 3rem;
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 .about-me-feedbacks .feedback {
-    width: 140px;
+    flex: 1 0 auto;
+    width: auto;
     height: 125px;
     background-color: var(--grey);
     text-align: center;
@@ -272,7 +275,7 @@ a {
 }
 
 .about-me-curriculum .curriculum {
-    flex: 1 0 500px;
+    flex: 1 0 48%;
     margin-right: 20px;
 }
 .about-me-curriculum .timeline {
@@ -351,7 +354,6 @@ a {
 .works figure {
     box-shadow: 10px 15px 10px 2px var(--grey);
     margin: 0 2rem 2rem 0;
-
 }
 
 .works figcaption {
@@ -362,6 +364,7 @@ a {
     font-weight: bold;
     display: flex;
     justify-content: space-between;
+    width: 100%;
 }
 /* works section */
 
@@ -399,8 +402,9 @@ a {
     outline: none;
 }
 .contacts .contact {
-    flex: 0 0 580px;
+    flex: 0 0 48%;
 }
+
 .contacts .contact p,  .contacts .contact address{
     font-size: 1.6rem;
     margin-bottom: 1rem;
@@ -432,6 +436,7 @@ a {
 
     .badge {
         left: 28px;
+        padding: 5px;
     }
 
     .service {
@@ -442,29 +447,18 @@ a {
         flex: 1 0 100%;
     }
 
-    .badge {
-       padding: 5px;
-    }
-
     .about-me-feedbacks .feedback {
         width: 105px;
         height: 105px;
         font-size: 1.2rem;
 
     }
-
-    .works figure {
-        width: 40%;
-    }
-
-    .works figcaption {
-        width: 100%;
-    }
+    
 }
 
 
 
-@media screen and (max-width: 770px) {
+@media screen and (max-width: 850px) {
     html {
         font-size: 13px;
     }
@@ -526,4 +520,23 @@ a {
         height: 40px;
     }
 
+    .works figure {
+        width: 100%;
+    }
+    .works figure img {
+        width: 100%;
+    }
+
+    .contacts .contact {
+        flex: 0 0 100%;
+    }
+    
+
+}
+
+@media screen and (max-width: 380px) {
+
+    .header-banner .presentation .contacts {
+        display: none;
+    }
 }
