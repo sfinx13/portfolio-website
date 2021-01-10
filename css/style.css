@@ -286,7 +286,7 @@ a {
     flex-wrap: wrap;
 }
 .about-me-feedbacks .feedback {
-    flex: 1 0 auto;
+    flex: 1 0 10vw;
     width: auto;
     height: 125px;
     background-color: var(--grey);
