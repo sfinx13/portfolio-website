@@ -128,6 +128,29 @@ a {
     transform: scale(1);
 }
 
+.check-button {
+    top: 10px;
+    right: 20px;
+    width: 50px;
+    font-size: 45px;
+    text-align: center;
+    color: var(--red);
+    cursor: pointer;
+    display: none;
+}
+
+.open {
+    position: fixed;
+}
+
+.close {
+    position: absolute;
+}
+
+#input-check {
+    display: none;
+}
+
 .badge {
     width: 40px;
     height: 40px;
@@ -485,8 +508,6 @@ a {
     
 }
 
-
-
 @media screen and (max-width: 850px) {
     html {
         font-size: 13px;
@@ -496,9 +517,17 @@ a {
         width: 100% !important;
     }
 
+    section {
+        padding: 15px;
+    }
+
     .cta-button {
         line-height: 3.2rem;
         width: 160px;
+    }
+    
+    #input-check:checked ~ .menu {
+        left: 50vw;
     }
 
     .badge {
@@ -507,19 +536,60 @@ a {
 
     .header {
         height: 520px;
+        padding: 0;
     }
     .header-topbar .social-networks {
-        padding-left: 0;
+        padding: 15px;
     }
     .header-banner {
         padding-top: 1.5rem;
-    }
-    .menu {
-        display: none;
+        padding-left: 15px;
     }
 
+    .check-button {
+        display: block;
+    }
+
+    .header-topbar .menu { 
+        position: fixed;
+        top: 0px;
+        left: 150vw;
+        z-index: 1;
+        padding-top: 6rem;
+        transform-origin: center;
+        transform: none;
+        direction: ltr;
+        font-weight: bold;
+        background-color: white;
+        height: 100vh;
+        width: 50vw;
+        box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.15);
+        transition: all 0.5s ease;
+    }
+    .header-topbar .menu li {
+        display: block;
+        width: 100%;
+    }
+    .header-topbar .menu li:last-child {
+        display: none;
+    }
+    .header-topbar .menu a {
+        text-align: center;
+        display: inline-block;
+        text-align: center;
+        width: 100%;
+        color: black;
+        font-size: 1.8rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .header-topbar .menu a:after {
+        display: none;
+    }
     section {
-        padding: 10px;
+        padding: 10px 10px 10px 20px;
     }
 
     .about-me-presentation {
@@ -560,54 +630,22 @@ a {
         flex: 0 0 100%;
     }
     
-
 }
 
 @media screen and (max-width: 380px) {
 
+    .header {
+        background-size: 85%;
+        background-position: 65% 0;
+        height: 60vh;
+    }
+    .header-topbar {
+        height: auto;
+    }
+    .header-banner {
+        padding-top: 7rem;
+    }
     .header-banner .presentation .contacts {
         display: none;
     }
 }
-
-
-.loading {
-    position: fixed;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    background-color: #ffffff;
-    z-index: 99999;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  
-  .loading .circle {
-    margin: auto;
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    background-color: var(--red);
-    animation: load 0.9s infinite linear;
-  }
-  
-  @keyframes load {
-    0% {
-        transform: scale(0.5);
-    }
-    50% {
-        transform: scale(1.2);
-    }
-    100% {
-        transform: scale(0);
-    }
-  }
-
-  .loaded {
-    visibility: hidden;
-    opacity: 0;
-    transition: visibility 0s 0.2s, opacity 0.2s linear;
-  }
-  

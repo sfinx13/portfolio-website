@@ -1,0 +1,40 @@
+.loading {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #ffffff;
+    z-index: 99999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .loading .circle {
+    margin: auto;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: var(--red);
+    animation: load 0.9s infinite linear;
+  }
+  
+  @keyframes load {
+    0% {
+        transform: scale(5);
+    }
+    50% {
+        transform: scale(15);
+    }
+    100% {
+        transform: scale(0);
+    }
+  }
+
+  .loaded {
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s 0.2s, opacity 0.2s linear;
+  }
+  

@@ -11,6 +11,7 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" 
         crossorigin="anonymous" />
         <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/animation.css">
         <link rel="icon" type="image/png" href="images/icon.png">
     </head>
     <body>
@@ -24,7 +25,14 @@
                     <i class="fab fa-linkedin"></i>
                     <i class="fab fa-behance"></i>
                 </div>
+                <input type="checkbox" id="input-check">
+                <label for="input-check" class="check-button open">
+                    <i class="fas fa-bars"></i>
+                </label>
                 <nav class="menu">
+                    <label for="input-check" class="check-button close">
+                        <i class="fas fa-times-circle"></i>
+                    </label>
                     <ul>
                         <li><a href="#">Home</a></li>
                         <li><a href="#about-me">About</a></li>
@@ -260,6 +268,5 @@
                 document.querySelector('.loading').classList.add('loaded');
             }, 1000)
         </script>  
-
     </body>
 </html>
