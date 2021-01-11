@@ -10,7 +10,7 @@
 
 It is a modern and creative portfolio one page website based on HTML CSS with no framework.
 
-<img src="images/screenshot.png" alt="Screenshot portfolio website">
+<img src="images/screenshot.png" alt="Screenshot portfolio website" width="500">
 
 ### Demo
 
