@@ -11,24 +11,29 @@
     justify-content: center;
   }
   
-  .loading .circle {
+  .loading .square {
     margin: auto;
     width: 40px;
     height: 40px;
-    border-radius: 50%;
     background-color: var(--red);
     animation: load 0.9s infinite linear;
   }
   
   @keyframes load {
     0% {
-        transform: scale(5);
+        transform: scale(1) rotate(45deg);
+    }
+    25% {
+        transform: scale(1.5) rotate(90deg);
     }
     50% {
-        transform: scale(15);
+      transform: scale(2) rotate(180deg);
+    }
+    75% {
+      transform: scale(1.5) rotate(270deg);
     }
     100% {
-        transform: scale(0);
+        transform: scale(0) rotate(360deg);
     }
   }
 
