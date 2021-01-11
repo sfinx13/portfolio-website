@@ -15,6 +15,3 @@ It is a modern and creative portfolio one page website based on HTML CSS with no
 ### Demo
 
 https://sfinx13.github.io/portfolio-website
-
-
-
