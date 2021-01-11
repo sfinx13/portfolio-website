@@ -172,7 +172,7 @@ a {
 
 /* header section*/
 .header {
-    background: url(../images/gummy-app-development.png), var(--grey);
+    background: url(../images/gummy-app-development.png) var(--grey);
     background-position: 100% 40%;
     background-size: 80%;
     background-repeat: no-repeat;
